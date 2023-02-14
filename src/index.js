@@ -1,13 +1,15 @@
 import 'dotenv/config';
 import cors from 'cors';
 import express from 'express';
+import path from 'path'
 
 const app = express();
 
 app.use(cors());
 
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  console.log("Your lambda was activated!", JSON.stringify(req.rawHeaders))
+  res.sendFile(path.join(__dirname, './lambdaFunc.js'));
 });
 
 app.listen(process.env.PORT, () =>
