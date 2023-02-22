@@ -1,21 +1,9 @@
-# Simple Node with Express Server
+# Houston v2
 
-[![Build Status](https://travis-ci.org/rwieruch/node-express-server.svg?branch=master)](https://travis-ci.org/rwieruch/node-express-server) [![Slack](https://slack-the-road-to-learn-react.wieruch.com/badge.svg)](https://slack-the-road-to-learn-react.wieruch.com/) [![Greenkeeper badge](https://badges.greenkeeper.io/rwieruch/node-express-server.svg)](https://greenkeeper.io/)
+- dzcli should watch dir for changes, use node to zip and send to db, s3 url will need to be created to point to zip
+- should lambda be created on the fly?
+- possibly, but end user should also be able to chose from container image
 
-An easy way to get started with a Express server with Node.js.
+## pre steps
 
-## Features
-
-* Express
-
-## Requirements
-
-* [node & npm](https://nodejs.org/en/)
-* [git](https://www.robinwieruch.de/git-essential-commands/)
-
-## Installation
-
-* `git clone git@github.com:rwieruch/node-express-server.git`
-* `cd node-express-server`
-* `npm install`
-* `npm start`
+1. create s3 url
