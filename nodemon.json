@@ -1,0 +1,6 @@
+{
+  "ignore": ["*.zip", "**/dist/**"],
+  "events": {
+      "restart": "npm run zip"
+    }
+ }

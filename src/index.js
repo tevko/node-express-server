@@ -9,7 +9,7 @@ app.use(cors());
 
 app.get('/', (req, res) => {
   console.log("Your lambda was activated!", JSON.stringify(req.rawHeaders))
-  res.sendFile(path.join(__dirname, './lambdaFunc.js'));
+  res.sendFile(path.join(__dirname, './output.zip'));
 });
 
 app.listen(process.env.PORT, () =>
