@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon --exec babel-node src/index.js",
     "test": "echo \"No test specified\" && exit 0",
-    "zip": "npx mkdirp dist && cp -r node_modules dist && cp -r src dist && npx folder-zip-sync dist"
+    "zip": "rm -f src/output.zip && rm -rf dist && npx mkdirp dist && cp -r node_modules dist && cp -r src dist && npx folder-zip-sync dist && cp -r output.zip src && rm output.zip"
   },
   "keywords": [],
   "author": "",
